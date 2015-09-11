@@ -2,7 +2,7 @@ from parsers.pdf import converters
 from feature_extraction.terms import Terms
 from summarization.summarizers import GenericSummarizer
 
-converter = converters.Converter("\\\\i5495\\share\\research\\GTA_Construction.pdf")
+converter = converters.Converter("/Users/Kosta/PycharmProjects/pdf-sumy/CanadianHousingStarts_Apr2015.pdf")
 
 text = converter.to_text()
 html = converter.to_html()

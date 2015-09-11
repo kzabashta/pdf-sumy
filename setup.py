@@ -10,7 +10,7 @@ config = {
     'download_url': 'https://github.com/kzabashta/pdf-summarizer',
     'author_email': 'kosta.zabashta@gmail.com',
     'version': '0.1',
-    'install_requires': ['pdfminer', 'sumy'],
+    'install_requires': ['pdfminer', 'sumy', 'langid'],
     'packages': ['summarizer'],
     'scripts': [],
     'name': 'pdf-summarizer'
