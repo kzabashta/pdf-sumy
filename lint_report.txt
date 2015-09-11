@@ -1,0 +1,279 @@
+************* Module summarizer
+C:  1, 0: Missing module docstring (missing-docstring)
+************* Module summarizer.main
+C:  5, 0: Line too long (107/100) (line-too-long)
+C: 11, 0: No space allowed around keyword argument assignment
+sum = GenericSummarizer(num_sentences = 15, correction_ratio = 0.6)
+                                      ^ (bad-whitespace)
+C: 11, 0: No space allowed around keyword argument assignment
+sum = GenericSummarizer(num_sentences = 15, correction_ratio = 0.6)
+                                                             ^ (bad-whitespace)
+C: 16, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W: 11, 0: Redefining built-in 'sum' (redefined-builtin)
+C:  1, 0: Missing module docstring (missing-docstring)
+W:  1, 0: Relative import 'parsers.pdf', should be 'summarizer.parsers.pdf' (relative-import)
+W:  2, 0: Relative import 'feature_extraction.terms', should be 'summarizer.feature_extraction.terms' (relative-import)
+W:  3, 0: Relative import 'summarization.summarizers', should be 'summarizer.summarization.summarizers' (relative-import)
+C:  5, 0: Invalid constant name "converter" (invalid-name)
+C:  7, 0: Invalid constant name "text" (invalid-name)
+C:  8, 0: Invalid constant name "html" (invalid-name)
+C: 10, 0: Invalid constant name "terms" (invalid-name)
+C: 11, 0: Invalid constant name "sum" (invalid-name)
+************* Module summarizer.feature_extraction
+C:  1, 0: Missing module docstring (missing-docstring)
+************* Module summarizer.feature_extraction.terms
+C: 40, 0: Final newline missing (missing-final-newline)
+C:  1, 0: Missing module docstring (missing-docstring)
+C:  3, 0: Missing class docstring (missing-docstring)
+C: 33, 4: Missing method docstring (missing-docstring)
+C: 36, 4: Missing method docstring (missing-docstring)
+C: 39, 4: Missing method docstring (missing-docstring)
+************* Module summarizer.parsers
+C:  1, 0: Missing module docstring (missing-docstring)
+************* Module summarizer.parsers.pdf
+C:  1, 0: Missing module docstring (missing-docstring)
+************* Module summarizer.parsers.pdf.converters
+C: 27, 0: Line too long (103/100) (line-too-long)
+C: 37, 0: Exactly one space required after comma
+        text = re.sub(r'[^\x00-\x7f]',r' ',text)
+                                     ^ (bad-whitespace)
+C: 37, 0: Exactly one space required after comma
+        text = re.sub(r'[^\x00-\x7f]',r' ',text)
+                                          ^ (bad-whitespace)
+C: 38, 0: Exactly one space required after comma
+        text = re.sub("\s+"," ",text)
+                           ^ (bad-whitespace)
+C: 38, 0: Exactly one space required after comma
+        text = re.sub("\s+"," ",text)
+                               ^ (bad-whitespace)
+C: 47, 0: Unnecessary parens after 'if' keyword (superfluous-parens)
+C: 48, 0: Exactly one space required around assignment
+                clean_text+=sentence + " "
+                          ^^ (bad-whitespace)
+C: 62, 0: Unnecessary parens after 'if' keyword (superfluous-parens)
+C: 65, 0: Final newline missing (missing-final-newline)
+W: 38, 0: Anomalous backslash in string: '\s'. String constant might be missing an r prefix. (anomalous-backslash-in-string)
+C:  1, 0: Missing module docstring (missing-docstring)
+C: 12, 0: Missing class docstring (missing-docstring)
+R: 12, 0: Too many instance attributes (9/7) (too-many-instance-attributes)
+C: 24, 4: Missing method docstring (missing-docstring)
+C: 26, 8: Invalid variable name "fp" (invalid-name)
+C: 35, 4: Missing method docstring (missing-docstring)
+E: 43,24: Instance of 'str' has no 'tokenize' member (no-member)
+E: 43,24: Instance of 'FeatureGrammar' has no 'tokenize' member (no-member)
+E: 43,24: Instance of 'PCFG' has no 'tokenize' member (no-member)
+E: 43,24: Instance of 'list' has no 'tokenize' member (no-member)
+E: 43,24: Instance of 'unicode' has no 'tokenize' member (no-member)
+E: 43,24: Instance of 'Valuation' has no 'tokenize' member (no-member)
+E: 43,24: Instance of 'CFG' has no 'tokenize' member (no-member)
+R: 35, 4: Method could be a function (no-self-use)
+C: 52, 4: Missing method docstring (missing-docstring)
+C: 57, 4: Missing method docstring (missing-docstring)
+W: 53, 8: Attribute 'retstr' defined outside __init__ (attribute-defined-outside-init)
+W: 58, 8: Attribute 'retstr' defined outside __init__ (attribute-defined-outside-init)
+************* Module summarizer.summarization
+C:  1, 0: Missing module docstring (missing-docstring)
+************* Module summarizer.summarization.summarizers
+C: 14, 0: No space allowed around keyword argument assignment
+    def __init__(self, num_sentences = 10, correction_ratio = 0.6, lang = "english"):
+                                     ^ (bad-whitespace)
+C: 14, 0: No space allowed around keyword argument assignment
+    def __init__(self, num_sentences = 10, correction_ratio = 0.6, lang = "english"):
+                                                            ^ (bad-whitespace)
+C: 14, 0: No space allowed around keyword argument assignment
+    def __init__(self, num_sentences = 10, correction_ratio = 0.6, lang = "english"):
+                                                                        ^ (bad-whitespace)
+C: 32, 0: Exactly one space required after comma
+            text = re.sub(r'[^\x00-\x7f]',r' ',text)
+                                         ^ (bad-whitespace)
+C: 32, 0: Exactly one space required after comma
+            text = re.sub(r'[^\x00-\x7f]',r' ',text)
+                                              ^ (bad-whitespace)
+C: 33, 0: Exactly one space required after comma
+            text = re.sub("\s+"," ",text)
+                               ^ (bad-whitespace)
+C: 33, 0: Exactly one space required after comma
+            text = re.sub("\s+"," ",text)
+                                   ^ (bad-whitespace)
+C: 50, 0: Final newline missing (missing-final-newline)
+W: 33, 0: Anomalous backslash in string: '\s'. String constant might be missing an r prefix. (anomalous-backslash-in-string)
+C:  1, 0: Missing module docstring (missing-docstring)
+C: 12, 0: Missing class docstring (missing-docstring)
+C: 19, 4: Missing method docstring (missing-docstring)
+W: 19,26: Unused argument 'content' (unused-argument)
+C: 44, 4: Missing method docstring (missing-docstring)
+C: 48, 4: Missing method docstring (missing-docstring)
+************* Module summarizer.utils
+C:  1, 0: Missing module docstring (missing-docstring)
+
+
+Report
+======
+140 statements analysed.
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |10     |10         |=          |0.00        |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|class    |3      |3          |=          |0.00        |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|method   |13     |13         |=          |23.08       |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|function |0      |0          |=          |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+External dependencies
+---------------------
+::
+
+    langid (summarizer.parsers.pdf.converters)
+    nltk (summarizer.feature_extraction.terms,summarizer.parsers.pdf.converters)
+    pdfminer 
+      \-converter (summarizer.parsers.pdf.converters)
+      \-layout (summarizer.parsers.pdf.converters)
+      \-pdfinterp (summarizer.parsers.pdf.converters)
+      \-pdfpage (summarizer.parsers.pdf.converters)
+    summarizer 
+      \-feature_extraction 
+      | \-terms (summarizer.main)
+      \-parsers 
+      | \-pdf 
+      |   \-converters (summarizer.main)
+      \-summarization 
+        \-summarizers (summarizer.main)
+    sumy 
+      \-nlp 
+      | \-stemmers (summarizer.summarization.summarizers)
+      | \-tokenizers (summarizer.summarization.summarizers)
+      \-parsers 
+      | \-html (summarizer.summarization.summarizers)
+      | \-plaintext (summarizer.summarization.summarizers)
+      \-summarizers 
+      | \-lsa (summarizer.summarization.summarizers)
+      \-utils (summarizer.summarization.summarizers)
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |143    |99.31 |143      |=          |
++----------+-------+------+---------+-----------+
+|docstring |0      |0.00  |0        |=          |
++----------+-------+------+---------+-----------+
+|comment   |0      |0.00  |0        |=          |
++----------+-------+------+---------+-----------+
+|empty     |1      |0.69  |1        |=          |
++----------+-------+------+---------+-----------+
+
+
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |0     |0        |=          |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.000 |0.000    |=          |
++-------------------------+------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |51     |51       |=          |
++-----------+-------+---------+-----------+
+|refactor   |2      |2        |=          |
++-----------+-------+---------+-----------+
+|warning    |9      |9        |=          |
++-----------+-------+---------+-----------+
+|error      |7      |7        |=          |
++-----------+-------+---------+-----------+
+
+
+
+% errors / warnings by module
+-----------------------------
+
++---------------------------------------+-------+--------+---------+-----------+
+|module                                 |error  |warning |refactor |convention |
++=======================================+=======+========+=========+===========+
+|summarizer.parsers.pdf.converters      |100.00 |33.33   |100.00   |31.37      |
++---------------------------------------+-------+--------+---------+-----------+
+|summarizer.main                        |0.00   |44.44   |0.00     |19.61      |
++---------------------------------------+-------+--------+---------+-----------+
+|summarizer.summarization.summarizers   |0.00   |22.22   |0.00     |25.49      |
++---------------------------------------+-------+--------+---------+-----------+
+|summarizer.feature_extraction.terms    |0.00   |0.00    |0.00     |11.76      |
++---------------------------------------+-------+--------+---------+-----------+
+|summarizer.utils.__init__              |0.00   |0.00    |0.00     |1.96       |
++---------------------------------------+-------+--------+---------+-----------+
+|summarizer.summarization.__init__      |0.00   |0.00    |0.00     |1.96       |
++---------------------------------------+-------+--------+---------+-----------+
+|summarizer.parsers.pdf.__init__        |0.00   |0.00    |0.00     |1.96       |
++---------------------------------------+-------+--------+---------+-----------+
+|summarizer.parsers.__init__            |0.00   |0.00    |0.00     |1.96       |
++---------------------------------------+-------+--------+---------+-----------+
+|summarizer.feature_extraction.__init__ |0.00   |0.00    |0.00     |1.96       |
++---------------------------------------+-------+--------+---------+-----------+
+|summarizer                             |0.00   |0.00    |0.00     |1.96       |
++---------------------------------------+-------+--------+---------+-----------+
+
+
+
+Messages
+--------
+
++-------------------------------+------------+
+|message id                     |occurrences |
++===============================+============+
+|missing-docstring              |23          |
++-------------------------------+------------+
+|bad-whitespace                 |14          |
++-------------------------------+------------+
+|no-member                      |7           |
++-------------------------------+------------+
+|invalid-name                   |6           |
++-------------------------------+------------+
+|superfluous-parens             |3           |
++-------------------------------+------------+
+|relative-import                |3           |
++-------------------------------+------------+
+|missing-final-newline          |3           |
++-------------------------------+------------+
+|line-too-long                  |2           |
++-------------------------------+------------+
+|attribute-defined-outside-init |2           |
++-------------------------------+------------+
+|anomalous-backslash-in-string  |2           |
++-------------------------------+------------+
+|unused-argument                |1           |
++-------------------------------+------------+
+|too-many-instance-attributes   |1           |
++-------------------------------+------------+
+|redefined-builtin              |1           |
++-------------------------------+------------+
+|no-self-use                    |1           |
++-------------------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at 3.07/10 (previous run: 3.07/10, +0.00)
+
