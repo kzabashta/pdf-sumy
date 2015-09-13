@@ -2,6 +2,10 @@ import nltk
 
 class Terms(object):
 
+    GEOGRAPHICAL_ENTITIES_KEY = "GPE"
+    NAMED_ENTITIES_KEY = "PERSON"
+    ORGANIZATTION_ENTITES_KEY = "ORGANIZATION"
+
     def __init__(self, text):
 
         tokens = nltk.word_tokenize(text)
@@ -11,9 +15,9 @@ class Terms(object):
 
         self.keywords = {}
 
-        for t in tree.subtrees():
-            key = t.label()
-            children = t.leaves()
+        for term in tree.subtrees():
+            key = term.label()
+            children = term.leaves()
 
             lbl = ""
 
@@ -27,10 +31,10 @@ class Terms(object):
                 self.keywords[key].append(lbl)
 
     def get_geographical_entites(self):
-        return self.keywords["GPE"]
+        return self.keywords[self.GEOGRAPHICAL_ENTITIES_KEY]
 
     def get_named_entities(self):
-        return self.keywords["PERSON"]
+        return self.keywords[self.NAMED_ENTITIES_KEY]
 
     def get_organization_entites(self):
-        return self.keywords["ORGANIZATION"]
+        return self.keywords[self.ORGANIZATTION_ENTITES_KEY]
