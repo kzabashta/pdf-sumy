@@ -10,3 +10,4 @@ python:
   - "nightly"
 # command to install dependencies
 install: "pip install -r stable_req.txt"
+script: nosetests
