@@ -1,24 +1,24 @@
 ************* Module summarizer
 C:  1, 0: Missing module docstring (missing-docstring)
 ************* Module summarizer.main
-C:  5, 0: Line too long (107/100) (line-too-long)
-C: 11, 0: No space allowed around keyword argument assignment
+C: 17, 0: No space allowed around keyword argument assignment
 sum = GenericSummarizer(num_sentences = 15, correction_ratio = 0.6)
                                       ^ (bad-whitespace)
-C: 11, 0: No space allowed around keyword argument assignment
+C: 17, 0: No space allowed around keyword argument assignment
 sum = GenericSummarizer(num_sentences = 15, correction_ratio = 0.6)
                                                              ^ (bad-whitespace)
-C: 16, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
-W: 11, 0: Redefining built-in 'sum' (redefined-builtin)
+C: 22, 0: Unnecessary parens after 'print' keyword (superfluous-parens)
+W: 17, 0: Redefining built-in 'sum' (redefined-builtin)
 C:  1, 0: Missing module docstring (missing-docstring)
-W:  1, 0: Relative import 'parsers.pdf', should be 'summarizer.parsers.pdf' (relative-import)
-W:  2, 0: Relative import 'feature_extraction.terms', should be 'summarizer.feature_extraction.terms' (relative-import)
-W:  3, 0: Relative import 'summarization.summarizers', should be 'summarizer.summarization.summarizers' (relative-import)
-C:  5, 0: Invalid constant name "converter" (invalid-name)
-C:  7, 0: Invalid constant name "text" (invalid-name)
-C:  8, 0: Invalid constant name "html" (invalid-name)
-C: 10, 0: Invalid constant name "terms" (invalid-name)
-C: 11, 0: Invalid constant name "sum" (invalid-name)
+W:  3, 0: Relative import 'parsers.pdf', should be 'summarizer.parsers.pdf' (relative-import)
+W:  4, 0: Relative import 'feature_extraction.terms', should be 'summarizer.feature_extraction.terms' (relative-import)
+W:  5, 0: Relative import 'summarization.summarizers', should be 'summarizer.summarization.summarizers' (relative-import)
+C:  7, 0: Invalid constant name "fpath" (invalid-name)
+C: 11, 0: Invalid constant name "converter" (invalid-name)
+C: 13, 0: Invalid constant name "text" (invalid-name)
+C: 14, 0: Invalid constant name "html" (invalid-name)
+C: 16, 0: Invalid constant name "terms" (invalid-name)
+C: 17, 0: Invalid constant name "sum" (invalid-name)
 ************* Module summarizer.feature_extraction
 C:  1, 0: Missing module docstring (missing-docstring)
 ************* Module summarizer.feature_extraction.terms
@@ -59,13 +59,13 @@ R: 12, 0: Too many instance attributes (9/7) (too-many-instance-attributes)
 C: 24, 4: Missing method docstring (missing-docstring)
 C: 26, 8: Invalid variable name "fp" (invalid-name)
 C: 35, 4: Missing method docstring (missing-docstring)
-E: 43,24: Instance of 'str' has no 'tokenize' member (no-member)
-E: 43,24: Instance of 'FeatureGrammar' has no 'tokenize' member (no-member)
-E: 43,24: Instance of 'PCFG' has no 'tokenize' member (no-member)
-E: 43,24: Instance of 'list' has no 'tokenize' member (no-member)
-E: 43,24: Instance of 'unicode' has no 'tokenize' member (no-member)
-E: 43,24: Instance of 'Valuation' has no 'tokenize' member (no-member)
 E: 43,24: Instance of 'CFG' has no 'tokenize' member (no-member)
+E: 43,24: Instance of 'list' has no 'tokenize' member (no-member)
+E: 43,24: Instance of 'PCFG' has no 'tokenize' member (no-member)
+E: 43,24: Instance of 'str' has no 'tokenize' member (no-member)
+E: 43,24: Instance of 'Valuation' has no 'tokenize' member (no-member)
+E: 43,24: Instance of 'unicode' has no 'tokenize' member (no-member)
+E: 43,24: Instance of 'FeatureGrammar' has no 'tokenize' member (no-member)
 R: 35, 4: Method could be a function (no-self-use)
 C: 52, 4: Missing method docstring (missing-docstring)
 C: 57, 4: Missing method docstring (missing-docstring)
@@ -109,7 +109,7 @@ C:  1, 0: Missing module docstring (missing-docstring)
 
 Report
 ======
-140 statements analysed.
+143 statements analysed.
 
 Statistics by type
 ------------------
@@ -166,13 +166,13 @@ Raw metrics
 +----------+-------+------+---------+-----------+
 |type      |number |%     |previous |difference |
 +==========+=======+======+=========+===========+
-|code      |143    |99.31 |143      |=          |
+|code      |146    |99.32 |143      |+3.00      |
 +----------+-------+------+---------+-----------+
 |docstring |0      |0.00  |0        |=          |
 +----------+-------+------+---------+-----------+
 |comment   |0      |0.00  |0        |=          |
 +----------+-------+------+---------+-----------+
-|empty     |1      |0.69  |1        |=          |
+|empty     |1      |0.68  |1        |=          |
 +----------+-------+------+---------+-----------+
 
 
@@ -248,15 +248,13 @@ Messages
 +-------------------------------+------------+
 |no-member                      |7           |
 +-------------------------------+------------+
-|invalid-name                   |6           |
+|invalid-name                   |7           |
 +-------------------------------+------------+
 |superfluous-parens             |3           |
 +-------------------------------+------------+
 |relative-import                |3           |
 +-------------------------------+------------+
 |missing-final-newline          |3           |
-+-------------------------------+------------+
-|line-too-long                  |2           |
 +-------------------------------+------------+
 |attribute-defined-outside-init |2           |
 +-------------------------------+------------+
@@ -270,10 +268,12 @@ Messages
 +-------------------------------+------------+
 |no-self-use                    |1           |
 +-------------------------------+------------+
+|line-too-long                  |1           |
++-------------------------------+------------+
 
 
 
 Global evaluation
 -----------------
-Your code has been rated at 3.07/10 (previous run: 3.07/10, +0.00)
+Your code has been rated at 3.22/10 (previous run: 3.07/10, +0.15)
 
