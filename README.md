@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/kzabashta/pdf-sumy.svg?branch=refactoring)](https://travis-ci.org/kzabashta/pdf-sumy)
+
 #PDF summarizer
 Library that parses PDF files for text, extracts keywords, and performs content summarization.
 
